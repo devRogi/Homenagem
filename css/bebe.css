@@ -1,0 +1,7 @@
+/* Texto da página do bebê */
+.bebe-imagem {
+    max-width: 100%;
+    border-radius: var(--borda-radius);
+    margin-top: 20px;
+    box-shadow: var(--sombra-padrao);
+}

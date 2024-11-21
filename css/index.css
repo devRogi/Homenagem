@@ -1,0 +1,7 @@
+/* Imagem do casal */
+.casal-imagem {
+    max-width: 100%;
+    border-radius: var(--borda-radius);
+    margin: 20px 0;
+    box-shadow: var(--sombra-padrao);
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatinhos</title>
+    <meta name="description" content="Explore fotos e vídeos de Barta e Maya, os adoráveis gatos.">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/galeria.css">
+</head>
+<body>
+    <div class="container scroll-animado">
+        <button onclick="voltar()" class="botao-voltar" aria-label="Voltar à página anterior">Voltar</button>
+        <h2 class="fade-in">Galeria de Fotos e Vídeos dos Gatos</h2>
+        <div class="botao-grupo fade-in" aria-label="Selecione o gato">
+            <button onclick="trocarGaleria('barta')" class="botao-icon" aria-label="Galeria do gato Barta">Barta</button>
+            <button onclick="trocarGaleria('maya')" class="botao-icon" aria-label="Galeria do gato Maya">Maya</button>
+        </div>
+        <div id="loader" class="fade-in" style="display: none;">Carregando...</div>
+        <div id="galeria" class="galeria-grid fade-in" aria-live="polite"></div>
+    </div>
+    <script src="js/galeria.js"></script>
+</body>
+</html>

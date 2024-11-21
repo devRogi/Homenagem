@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis globais */
+:root {
+    --cor-primaria: #1D3557;
+    --cor-secundaria: #E63946;
+    --fundo-claro: #F1FAEE;
+    --texto-escuro: #333333;
+    --texto-claro: #ffffff;
+    --borda-radius: 10px;
+    --sombra-padrao: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --fonte-base: 'Arial', sans-serif;
+}
+
+/* Estilo global */
+body {
+    font-family: var(--fonte-base);
+    background: var(--fundo-claro);
+    color: var(--texto-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Containers */
+.container {
+    background: #fff;
+    border-radius: var(--borda-radius);
+    box-shadow: var(--sombra-padrao);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Botões */
+.botao-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color: var(--cor-primaria);
+    color: var(--texto-claro);
+    text-decoration: none;
+    border: none;
+    border-radius: var(--borda-radius);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-icon img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.botao-icon:hover {
+    background-color: var(--cor-secundaria);
+    transform: scale(1.05);
+}
+
+.botao-voltar {
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 8px 16px;
+    background: var(--cor-secundaria);
+    color: var(--texto-claro);
+    border: none;
+    border-radius: var(--borda-radius);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botao-voltar:hover {
+    transform: scale(1.1);
+}
+
+/* Animações */
+.fade-in {
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-visivel {
+    opacity: 1;
+    transform: translateY(0);
+}

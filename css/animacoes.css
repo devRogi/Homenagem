@@ -1,0 +1,22 @@
+/* Estilo dos corações */
+.corao {
+    position: absolute;
+    color: #FF6B6B;
+    font-size: 20px;
+    animation: cair 5s linear infinite;
+    z-index: 1000;
+    user-select: none; /* Impede seleção */
+    pointer-events: none; /* Impede interação */
+}
+
+/* Animação para os corações */
+@keyframes cair {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
