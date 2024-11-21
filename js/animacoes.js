@@ -2,7 +2,7 @@
 function criarCorao() {
     const corao = document.createElement("span");
     corao.classList.add("corao");
-    corao.textContent = "🩵💘";
+    corao.textContent = "🩵";
 
     const tamanho = Math.random() * 30 + 10;
     corao.style.left = Math.random() * window.innerWidth + "px";
